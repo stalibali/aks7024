@@ -5,7 +5,7 @@ metadata:
     app: graph-ql-app
   name: graph-ql-app
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app: graph-ql-app
