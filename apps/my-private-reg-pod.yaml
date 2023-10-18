@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: graphql
+  namespace: grf
+spec:
+  containers:
+  - name: graphql-container
+    image: stalibali/supplychainactionworkflow:f0b1ea5960d456fa21269e12778de693896dcc83    
+  imagePullSecrets:
+  - name: regcred
