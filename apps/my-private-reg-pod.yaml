@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: graphql
-  namespace: grf
+  namespace: graph
 spec:
   containers:
   - name: graphql-container
