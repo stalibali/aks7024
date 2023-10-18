@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: graph-ql-app
+  name: graph-ql-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: graph-ql-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: graph-ql-app
+    spec:
+      containers:
+      - image: stalibali/supplychainactionworkflow:f0b1ea5960d456fa21269e12778de693896dcc83
+        name: graph-ql-app
+      imagePullSecrets:
+      - name: regcred
