@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: graphql
+  name: gdv
   namespace: 2048-game
 spec:
   containers:
