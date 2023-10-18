@@ -4,6 +4,10 @@ metadata:
   name: graphql
   namespace: grf
 spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: graphql
   containers:
   - name: graphql-container
     image: stalibali/supplychainactionworkflow:f0b1ea5960d456fa21269e12778de693896dcc83    
