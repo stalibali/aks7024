@@ -3,11 +3,15 @@ kind: Pod
 metadata:
   name: graphql
   namespace: grf
+  labels:
+    app: graphql
+    tier: graphql
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: graphql
+      tier: graphql
   containers:
   - name: graphql-container
     image: stalibali/supplychainactionworkflow:f0b1ea5960d456fa21269e12778de693896dcc83    
